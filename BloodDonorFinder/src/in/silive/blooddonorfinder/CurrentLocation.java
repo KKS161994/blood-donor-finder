@@ -41,7 +41,7 @@ public class CurrentLocation extends Service implements LocationListener {
 		}
 		try {
 			isNetworkEnabled = locationManager
-					.isProviderEnabled(locationManager.NETWORK_PROVIDER);
+					.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
 
 			if (!isGPSenabled && !isNetworkEnabled) {
 				Log.d("Service status", "Not connected");
@@ -59,7 +59,6 @@ public class CurrentLocation extends Service implements LocationListener {
 						latitude = location.getLatitude();
 						longitude = location.getLongitude();
 
-//						Log.d("co ordinates", " " + latitude + "  " + longitude);
 						return location;
 					}
 				} else {

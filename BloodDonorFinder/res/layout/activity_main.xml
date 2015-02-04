@@ -59,10 +59,15 @@
             android:id="@+id/etLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:hint="Current location"
             android:padding="@dimen/activity_horizontal_margin"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_vertical_margin"
-            android:paddingTop="@dimen/activity_vertical_margin" />
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textColor="#1BB0CE"
+            android:textColorHint="#000000" />
     </LinearLayout>
 
     <LinearLayout
@@ -74,14 +79,35 @@
             android:id="@+id/Searchbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/search"
-            android:onClick="Search" />
+            android:background="@drawable/search" />
 
         <Button
             android:id="@+id/Registerbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/register" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you an existing user???"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to login" />
     </LinearLayout>
 
 </LinearLayout>

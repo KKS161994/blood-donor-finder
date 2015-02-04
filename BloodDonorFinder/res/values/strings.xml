@@ -18,5 +18,11 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <string-array name="name">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 
 </resources>
